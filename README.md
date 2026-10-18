@@ -1,11 +1,11 @@
-# 🏥 CarePulse HMS – Enterprise Hospital Management System
+# CarePulse HMS – Enterprise Hospital Management System
 ### On-Device, High-Performance Clinical Operating System
 
 CarePulse HMS is a full-stack, enterprise-grade Hospital Management System designed for hospital networks, outpatient clinics, and private practices. It operates **100% locally on-device** with **zero external cloud API keys**, zero telemetry leakage, and zero vendor lock-in.
 
 ---
 
-## ⚡ Key Performance Highlights
+## Key Performance Highlights
 
 * **$\ge 35\%$ Latency Reduction (Achieved $\mathbf{92.4\%}$):** Average query response time is **`9.09 ms`** (p95: **`12.09 ms`**) across 16 core endpoints backed by compound-indexed MongoDB schemas.
 * **100+ Concurrent Updates:** Processed 100 simultaneous triage check-in mutations in **`1.31 seconds`** (throughput: **`76.2 ops/sec`**) with **0% dropped requests** and **0 state deadlocks**.
@@ -14,7 +14,7 @@ CarePulse HMS is a full-stack, enterprise-grade Hospital Management System desig
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## Architecture & Tech Stack
 
 ```text
 ┌─────────────────────────────────────────────────────────────┐
@@ -41,7 +41,7 @@ CarePulse HMS is a full-stack, enterprise-grade Hospital Management System desig
 
 ---
 
-## 🚀 Quick-Start Guide (One-Command Launch)
+## Quick-Start Guide (One-Command Launch)
 
 ### Prerequisites
 * **Node.js** v18.0 or higher ([Download Node.js](https://nodejs.org/))
@@ -66,13 +66,13 @@ Run both backend and frontend concurrently with a single command:
 npm run dev
 ```
 
-* 🖥️ **Frontend:** [http://localhost:5173](http://localhost:5173)
-* ⚙️ **Backend API:** [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
-* 🩺 **Health Probe:** [http://localhost:5000/api/v1/health](http://localhost:5000/api/v1/health)
+*  **Frontend:** [http://localhost:5173](http://localhost:5173)
+*  **Backend API:** [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
+*  **Health Probe:** [http://localhost:5000/api/v1/health](http://localhost:5000/api/v1/health)
 
 ---
 
-## 🔑 Pre-Configured Demo Credentials
+## Pre-Configured Demo Credentials
 
 The login gateway includes **1-Click Quick Fill** buttons for instant role switching:
 
@@ -85,7 +85,7 @@ The login gateway includes **1-Click Quick Fill** buttons for instant role switc
 
 ---
 
-## 🧪 Verification & Benchmarking Test Commands
+## Verification & Benchmarking Test Commands
 
 Run the automated test harnesses directly from the project root:
 
@@ -111,7 +111,7 @@ npm run build
 
 ---
 
-## 📁 Repository Directory Structure
+## Repository Directory Structure
 
 ```text
 HM/
@@ -157,7 +157,7 @@ HM/
 
 ---
 
-## 🔒 Security & Compliance Architecture
+## Security & Compliance Architecture
 
 * **Role-Based Access Control (RBAC):** Strict middleware guards isolate views and APIs. Patients attempting to access `/admin` or staff attempting to query unauthorized medical records receive an immediate `403 FORBIDDEN`.
 * **Token Rotation:** Access tokens expire in 15 minutes. Refresh tokens are hashed and stored in MongoDB with 7-day TTL and rotation on every refresh request.
@@ -166,7 +166,7 @@ HM/
 
 ---
 
-## 💡 Troubleshooting & FAQ
+## Troubleshooting & FAQ
 
 #### 1. What if I do not have MongoDB installed on my computer?
 You do not need to install MongoDB. When the backend starts, if it cannot connect to port `27017`, it automatically launches an embedded in-memory MongoDB instance on port `27018`.
